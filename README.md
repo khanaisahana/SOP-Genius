@@ -1,16 +1,16 @@
 # SOP-Genius - RAG-Based SOP Knowledge Assistant
 
 
-📌 Description (for portfolio/resume):
+Description:
+An intelligent Retrieval-Augmented Generation (RAG) system that converts static cybersecurity SOPs into a dynamic, searchable Q&A assistant. The app allows users to upload or query SOP documents and receive accurate, context-aware answers using LLMs and vector databases.
 
-A Retrieval-Augmented Generation (RAG) system that transforms static cybersecurity SOPs into an intelligent Q&A assistant. Users can upload or query SOPs and get accurate, context-aware responses using ChromaDB and LLMs.
+🧠 Key Features:
 
-🧠 Features:
+Upload .txt SOP files and automatically index them as vector embeddings
 
-Upload .txt SOPs to be indexed as vector embeddings.
+Ask natural language questions related to security operations or procedures
 
-Ask operational/security queries in natural language.
+Get precise, real-time answers sourced directly from internal SOPs
 
-Get precise guidance from internal SOP knowledge base.
-
-🔧 Stack: Python, ChromaDB, Sentence Transformers, Streamlit, OpenRouter LLM, RAG, Vector Search
+🔧 Tech Stack:
+Python · FAISS · Sentence Transformers · Streamlit · OpenRouter LLM · RAG Architecture · Vector Similarity Search
