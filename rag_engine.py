@@ -8,7 +8,14 @@ from chromadb.utils import embedding_functions
 EMBED_MODEL = "all-MiniLM-L6-v2"
 persist_dir = "chromadb_store"
 
-client = chromadb.PersistentClient(path=persist_dir)
+# client = chromadb.PersistentClient(path=persist_dir)
+
+# Initialize ChromaDB in in-memory mode
+client = chromadb.Client(Settings(
+    chroma_db_impl="duckdb+parquet",
+    persist_directory=None  # In-memory mode for cloud platforms
+))
+
 embedding_func = embedding_functions.SentenceTransformerEmbeddingFunction(model_name=EMBED_MODEL)
 
 collection = client.get_or_create_collection(name="sop_docs", embedding_function=embedding_func)
