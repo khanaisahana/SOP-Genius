@@ -10,12 +10,16 @@ from dotenv import load_dotenv
 st.set_page_config(page_title="Threat Intelligence Assistant", layout="centered")
 st.title("🔐 Threat Intelligence Assistant (FAISS + LLM)")
 
+st.sidebar.header("🔑 API Setup")
+API_KEY = st.sidebar.text_input("Enter your OpenRouter API Key", type="password")
+REFERER_URL = "https://sahanagenai.streamlit.app"  # Update this if your app URL changes
+
 st.sidebar.header("Upload SOPs")
 uploaded_file = st.sidebar.file_uploader("Upload SOP (.txt only)", type=["txt"])
 
-load_dotenv()
-API_KEY = os.getenv("API_KEY")
-REFERER_URL = "https://sahanagenai.streamlit.app"
+# load_dotenv()
+# API_KEY = os.getenv("API_KEY")
+# REFERER_URL = "https://sahanagenai.streamlit.app"
 
 # Directory to store SOPs
 os.makedirs("sops", exist_ok=True)
@@ -30,7 +34,9 @@ if uploaded_file:
 st.header("Ask about your SOPs 📄")
 
 user_query = st.text_input("Enter your question")
-if st.button("Ask") and user_query:
+if not API_KEY:
+    st.warning("Please enter your OpenRouter API key in the sidebar.")
+elif st.button("Ask") and user_query:
     with st.spinner("Retrieving..."):
         context = query_sop_docs(user_query)
         full_prompt = f"Refer to this SOP content and answer: \n\n{context}\n\nQuestion: {user_query}"
