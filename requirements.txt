@@ -3,3 +3,5 @@ chromadb
 sentence-transformers
 requests
 python-dotenv
+chromadb
+sentence_transformers
