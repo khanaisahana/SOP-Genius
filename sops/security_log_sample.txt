@@ -1,0 +1,5 @@
+[2025-07-22 14:02:01] Failed login attempt from IP 192.168.1.99 (username: admin)
+[2025-07-22 14:02:10] Failed login attempt from IP 192.168.1.99 (username: admin)
+[2025-07-22 14:02:15] Login successful from IP 192.168.1.99 (username: admin)
+[2025-07-22 14:03:05] User uploaded suspicious file: malware.exe
+[2025-07-22 14:05:12] File blocked by antivirus system

@@ -1,35 +1,50 @@
-# Build ChromaDB RAG Engine
+
+# rag_engine.py
 
 import os
-import chromadb
+import faiss
+import pickle
 from sentence_transformers import SentenceTransformer
-from chromadb.utils import embedding_functions
-from chromadb.config import Settings
-
 
 EMBED_MODEL = "all-MiniLM-L6-v2"
-persist_dir = "chromadb_store"
+embedding_model = SentenceTransformer(EMBED_MODEL)
 
-# client = chromadb.PersistentClient(path=persist_dir)
+# Paths
+INDEX_PATH = "faiss_index/index.faiss"
+DOCS_PATH = "faiss_index/docs.pkl"
+os.makedirs("faiss_index", exist_ok=True)
 
-# Initialize ChromaDB in in-memory mode
-client = chromadb.Client(Settings(
-    chroma_db_impl="duckdb+parquet",
-    persist_directory=None  # In-memory mode for cloud platforms
-))
+# Load or create FAISS index
+dimension = embedding_model.get_sentence_embedding_dimension()
+if os.path.exists(INDEX_PATH) and os.path.exists(DOCS_PATH):
+    index = faiss.read_index(INDEX_PATH)
+    with open(DOCS_PATH, "rb") as f:
+        doc_store = pickle.load(f)
+else:
+    index = faiss.IndexFlatL2(dimension)
+    doc_store = []  # Stores the original documents
 
-embedding_func = embedding_functions.SentenceTransformerEmbeddingFunction(model_name=EMBED_MODEL)
-
-collection = client.get_or_create_collection(name="sop_docs", embedding_function=embedding_func)
-
-def load_txt_to_chromadb(filepath):
+def load_txt_to_faiss(filepath):  # Retained function name for compatibility
     with open(filepath, 'r', encoding='utf-8') as f:
         content = f.read()
-    doc_id = os.path.basename(filepath)
-    collection.add(documents=[content], ids=[doc_id])
+    embedding = embedding_model.encode([content])
+    index.add(embedding)
+    doc_store.append(content)
+
+    # Persist index and docs
+    faiss.write_index(index, INDEX_PATH)
+    with open(DOCS_PATH, "wb") as f:
+        pickle.dump(doc_store, f)
 
 def query_sop_docs(user_query, top_k=3):
-    results = collection.query(query_texts=[user_query], n_results=top_k)
-    if results["documents"]:
-        return "\n\n".join(doc[0] for doc in results["documents"])
-    return "No relevant SOP found."
+    if index.ntotal == 0:
+        return "No documents available."
+
+    query_embedding = embedding_model.encode([user_query])
+    distances, indices = index.search(query_embedding, top_k)
+
+    matched_docs = []
+    for idx in indices[0]:
+        if idx < len(doc_store):
+            matched_docs.append(doc_store[idx])
+    return "\n\n".join(matched_docs) if matched_docs else "No relevant SOP found."

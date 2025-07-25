@@ -1,15 +1,15 @@
-Phishing is a method of social engineering used by attackers to deceive users into revealing sensitive information, such as login credentials or financial data. 
-
-Response Procedure:
-1. Detection: Identify the phishing email or message using spam filters or user reports.
-2. Reporting: Immediately report the suspicious communication to the cybersecurity team.
-3. Containment: Disable the compromised account (if any) and block associated domains/URLs.
-4. Analysis: Examine the phishing attempt to understand attacker tactics and affected systems.
-5. User Notification: Inform affected users and provide guidance on security hygiene.
-6. Recovery: Reset passwords and enable multi-factor authentication.
-7. Documentation: Record the phishing incident details for future reference.
-
-Preventive Measures:
-- Regular user training on identifying phishing attempts.
-- Implementing email authentication protocols (SPF, DKIM, DMARC).
-- Continuous monitoring of email traffic.
+Phishing is a method of social engineering used by attackers to deceive users into revealing sensitive information, such as login credentials or financial data. 
+
+Response Procedure:
+1. Detection: Identify the phishing email or message using spam filters or user reports.
+2. Reporting: Immediately report the suspicious communication to the cybersecurity team.
+3. Containment: Disable the compromised account (if any) and block associated domains/URLs.
+4. Analysis: Examine the phishing attempt to understand attacker tactics and affected systems.
+5. User Notification: Inform affected users and provide guidance on security hygiene.
+6. Recovery: Reset passwords and enable multi-factor authentication.
+7. Documentation: Record the phishing incident details for future reference.
+
+Preventive Measures:
+- Regular user training on identifying phishing attempts.
+- Implementing email authentication protocols (SPF, DKIM, DMARC).
+- Continuous monitoring of email traffic.
