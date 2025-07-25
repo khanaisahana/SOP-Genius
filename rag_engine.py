@@ -4,6 +4,8 @@ import os
 import chromadb
 from sentence_transformers import SentenceTransformer
 from chromadb.utils import embedding_functions
+from chromadb.config import Settings
+
 
 EMBED_MODEL = "all-MiniLM-L6-v2"
 persist_dir = "chromadb_store"
