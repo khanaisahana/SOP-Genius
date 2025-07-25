@@ -1,0 +1,23 @@
+An incident response plan outlines the steps to take when a security incident occurs to minimize damage and recover quickly.
+
+Incident Response Lifecycle:
+1. Preparation:
+   - Define roles and responsibilities.
+   - Maintain updated contact lists and communication plans.
+2. Detection & Analysis:
+   - Monitor logs, alerts, and system behavior.
+   - Confirm the incident and determine its nature and scope.
+3. Containment:
+   - Short-Term: Isolate affected systems to prevent spread.
+   - Long-Term: Apply patches and change configurations.
+4. Eradication:
+   - Remove malware, unauthorized users, and backdoors.
+   - Identify root cause and fix vulnerabilities.
+5. Recovery:
+   - Restore systems to normal operations.
+   - Monitor for signs of weaknesses or reinfection.
+6. Lessons Learned:
+   - Conduct a post-mortem.
+   - Update incident response and security posture.
+
+Every step should be logged and time-stamped for audit and legal purposes.

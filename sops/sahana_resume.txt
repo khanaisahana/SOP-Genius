@@ -1,0 +1,120 @@
+
+Sahana Khanai
+Generative AI Engineer
+LinkedIn | 9353048023 | [sahana.khanai.jcer.cs061@gmail.com](mailto:sahana.khanai.jcer.cs061@gmail.com) | Mumbai, India 400601 | GitHub
+
+Objective:
+Innovative and technically versatile Engineer with 2 years of experience in full-stack development, now building intelligent applications using Generative AI tools such as LLMs, LangChain, Hugging Face, and RAG pipelines. Skilled in integrating vector databases like FAISS and ChromaDB, and deploying Transformer-based models on cloud platforms including AWS SageMaker and Bedrock. Combines strong backend expertise in Spring Boot, API development, and CI/CD with deep learning, prompt engineering, and modern AI frameworks to deliver scalable, production-ready AI solutions in fast-paced environments.
+
+Education:
+Bachelor of Engineering | Computer Science and Engineering
+Visvesvaraya Technological University – Belagavi, CGPA: 9.14 (Aug 2019 – May 2023)
+
+ Recipient of Gold Medal 2023
+
+Skills:
+
+ Generative AI & NLP: LLMs (OpenAI GPT, Llama2, Mistral, Gemini Pro), LangChain, Hugging Face, Transformers, RAG Pipelines, PEFT, Prompt Engineering, Fine-tuning, LangSmith, LangServe, LlamaIndex, Ollama, NLP Pipelines, NLTK, word2vec, Text Embedding, Conversational AI
+ Machine Learning & Deep Learning: TensorFlow, PyTorch, Keras, Scikit-learn, ANN, RNN, LSTM, Model Evaluation, Neural Network Optimization, Transfer Learning, OpenAI API
+ Cloud Platforms & DevOps: AWS SageMaker, AWS Bedrock, Databricks, Docker, Jenkins, Git, CI/CD Pipelines, SonarQube, Unix
+ Full-Stack & API Engineering: Spring Boot, Hibernate, RESTful APIs, Servlets, JSP, JDBC, Streamlit, OpenAPI, Postman
+ Frontend: React.js, JavaScript, HTML, CSS, Bootstrap
+ Databases: PostgreSQL, MySQL, Apache Derby, ChromaDB, FAISS
+ Programming: Python, Java, JavaScript, SQL
+ Soft Skills: Problem Solving, Communication, Team Collaboration, Adaptability, Attention to Detail, Time Management
+
+Experience:
+
+Tata Consultancy Services (TCS)
+Software Engineer – Full Stack Development & Generative AI
+Mumbai, India | Feb 2024 – Present
+
+ Developed APIs using Java, Spring Boot, Hibernate, and JWT
+ Built responsive UIs using JSP, HTML, CSS, and JavaScript
+ Automated CI/CD using Docker, Jenkins, SonarQube
+ Provided L2/L3 support and resolved incidents
+ Prototyped RAG-based chatbot with Python and LangChain
+ Explored LangChain, FAISS, OpenAI GPT, and Hugging Face Transformers
+
+NSREEM
+AI Developer – Full Stack & ML Prototyping
+Remote | Feb 2023 – May 2023
+
+ Built dashboards using Streamlit and Python
+ Implemented K-Means clustering for customer segmentation
+ Created sentiment analysis using NLTK and Scikit-learn
+ Prototyped a content-based recommender with OpenAI API
+
+Knowx Innovations Pvt. Ltd.
+AI/ML Engineer – Applied ML Projects
+Bengaluru, India | Aug 2022 – Sep 2022
+
+ Built secure Password Manager using Python, Tkinter, MySQL
+ Developed fraud detection system using Random Forest (95% accuracy)
+ Used Scikit-learn for preprocessing and feature selection
+ Worked on NLP-based text classification
+
+Projects:
+
+1. Customer Churn Classifier
+   Technologies: Streamlit, ANN, TensorFlow, Python
+
+ Web app to predict churn with 85% accuracy
+ End-to-end ML lifecycle implementation
+
+2. Movie Review Sentiment Detector
+   Technologies: Streamlit, RNN, TensorFlow, Python
+
+ Classified reviews as positive/negative
+ 90% accuracy, real-time prediction UI
+
+3. Next Word Predictor
+   Technologies: Streamlit, LSTM, TensorFlow, Python
+
+ Suggested next words using LSTM
+ Simulated natural typing behavior
+
+4. AI Picture Translator
+   Technologies: TensorFlow, OCR, Multilingual Translation
+
+ Detected objects/text and translated them
+ 90% recognition accuracy
+
+5. Secure Password Manager
+   Technologies: Python, Tkinter, MySQL
+
+ Stored encrypted passwords securely
+ GUI for storage/retrieval
+
+6. PG Management System
+   Technologies: Spring Boot, React, Docker, MySQL
+
+ Role-based app with JWT auth and CRUD operations
+ Dockerized deployment
+
+Certifications:
+
+ Generative AI with LangChain & Hugging Face – Udemy
+ Career Essentials in GenAI – Microsoft & LinkedIn
+ Spring Security 6 & JWT, OAuth2 – Udemy
+ Java Web Services & REST API – Udemy
+ OpenAI & ChatGPT API – Udemy
+ GenAI Foundation Curriculum – TCS
+ SQL for Data Science – Coursera
+ Machine Learning for All – Coursera
+ Python Data Structures – Coursera
+ Web Development Bootcamp – Udemy
+ Cybersecurity Awareness – TCS & Forage
+
+Achievements & Awards:
+
+ Gold Medal in B.E. CSE
+ Best Student in High School and PUC
+ 1st rank in SSLC and Computer Competitions
+ 5 Star in Python – Hackerrank
+ Top Performer – TCS ILP Program
+ Beyond Performance Award – TCS
+ Xcelerate Warrior Certificate – TCS
+ Special Initiative Award – TCS, June 2025
+ Recognized as role model for dedication and contributions
+
