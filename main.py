@@ -14,7 +14,7 @@ load_dotenv()
 
 # ==== OpenRouter API Setup ====
 API_KEY = os.getenv("API_KEY")
-REFERER_URL = "https://sahanagenai.streamlit.app"
+REFERER_URL = "https://sahanakhanai-sop-genius.streamlit.app/"
 
 if uploaded_file:
     file_path = os.path.join("sops", uploaded_file.name)
