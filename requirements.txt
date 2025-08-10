@@ -5,4 +5,5 @@ tqdm
 sentence-transformers
 python-dotenv
 langchain
+faiss
 requests
