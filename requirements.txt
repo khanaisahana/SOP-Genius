@@ -5,5 +5,8 @@ tqdm
 sentence-transformers
 python-dotenv
 langchain
-faiss
 requests
+faiss
+pickle
+os
+utils
