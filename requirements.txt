@@ -6,7 +6,4 @@ sentence-transformers
 python-dotenv
 langchain
 requests
-faiss
-pickle
-os
-utils
+faiss-cpu
