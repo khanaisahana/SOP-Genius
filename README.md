@@ -1,5 +1,6 @@
 # SOP-Genius - RAG-Based SOP Knowledge Assistant
 
+https://sahanakhanai-sop-genius.streamlit.app/
 
 Description:
 An intelligent Retrieval-Augmented Generation (RAG) system that converts static cybersecurity SOPs into a dynamic, searchable Q&A assistant. The app allows users to upload or query SOP documents and receive accurate, context-aware answers using LLMs and vector databases.
